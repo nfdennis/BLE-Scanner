@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 		//beaconManager.stopNearableDiscovery(scanId);
 	}
 	
-	/** Called when the user taps the Send button **/
+	/** Enter config button **/
 	public void enterConfig(View view) {
 		// invisible button to config activity
 		Intent intent = new Intent(this, ConfigActivity.class);
