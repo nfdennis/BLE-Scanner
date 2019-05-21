@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BLE Scanner</string>
+    <string name="button_exit">Exit</string>
+    <string name="button_save">Save</string>
+    <string name="rssi_label">...</string>
+    <string name="battery_label">...</string>
+    <string name="upload_label">...</string>
+    <string name="participant_id">Enter Participant ID</string>
+    <string name="participant_view">%s</string>
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/rssiImage"
+        android:layout_width="139dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/uploadImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beaconView"
+        app:srcCompat="@drawable/warn" />
+
+    <ImageView
+        android:id="@+id/uploadImage"
+        android:layout_width="139dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/batteryImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rssiImage"
+        app:layout_constraintTop_toBottomOf="@+id/beaconView"
+        app:srcCompat="@drawable/warn" />
+
+    <TextView
+        android:id="@+id/beaconView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Scanning..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rssiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="RSSI: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#009688"
+        app:layout_constraintStart_toStartOf="@+id/rssiImage"
+        app:layout_constraintTop_toBottomOf="@+id/rssiImage" />
+
+    <TextView
+        android:id="@+id/uploadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Last Upload: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#009688"
+        app:layout_constraintStart_toStartOf="@+id/uploadImage"
+        app:layout_constraintTop_toBottomOf="@+id/uploadImage" />
+
+    <TextView
+        android:id="@+id/batteryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Battery: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#009688"
+        app:layout_constraintStart_toStartOf="@+id/batteryImage"
+        app:layout_constraintTop_toBottomOf="@+id/batteryImage" />
+
+    <TextView
+        android:id="@+id/rssiView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/rssi_label"
+        android:textColor="#009688"
+        app:layout_constraintStart_toEndOf="@+id/rssiText"
+        app:layout_constraintTop_toBottomOf="@+id/rssiImage" />
+
+    <TextView
+        android:id="@+id/uploadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/upload_label"
+        android:textColor="#009688"
+        app:layout_constraintStart_toEndOf="@+id/uploadText"
+        app:layout_constraintTop_toBottomOf="@+id/uploadImage" />
+
+    <TextView
+        android:id="@+id/batteryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/battery_label"
+        android:textColor="#009688"
+        app:layout_constraintStart_toEndOf="@+id/batteryText"
+        app:layout_constraintTop_toBottomOf="@+id/batteryImage" />
+
+    <Button
+        android:id="@+id/configButton"
+        android:layout_width="64dp"
+        android:layout_height="34dp"
+        android:background="@android:color/transparent"
+        android:onClick="enterConfig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/batteryImage"
+        android:layout_width="139dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/uploadImage"
+        app:layout_constraintTop_toBottomOf="@+id/beaconView"
+        app:srcCompat="@drawable/success" />
+
+</android.support.constraint.ConstraintLayout>
